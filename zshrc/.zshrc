@@ -1,9 +1,14 @@
 set -o vi
+bindkey -v
 export PATH="$GOPATH/bin:$PATH"
 export PYENV_ROOT="$HOME/.pyenv"
 export GOPATH="$HOME/go"
 export GO_PRIVATE=github.com/steven-egan/*
 
+alias python=python3
+alias tm=tmux
+alias tma=
+alias tma='f() { tmux attach-session -t $1 };f'
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
@@ -22,7 +27,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 
 
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting web-search)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
