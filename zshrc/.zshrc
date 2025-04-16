@@ -1,6 +1,6 @@
 set -o vi
 bindkey -v
-export PATH="$GOPATH/bin:$PATH"
+export PATH="$HOME/.npm-global/bin:$GOPATH/bin:$PATH"
 export PYENV_ROOT="$HOME/.pyenv"
 export GOPATH="$HOME/go"
 export GO_PRIVATE=github.com/steven-egan/*
