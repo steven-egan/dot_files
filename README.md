@@ -11,6 +11,15 @@ Needed to create a ~/.zprofile that sources ~/.config/zshrc/.zshrc
 
 `brew install luarocks` - Lazy.nvim needs [luarocks](https://luarocks.org/)
 `brew install lazygit` - laygit install
+`brew install gnupg` - gnupg install
+https://www.veracrypt.fr/code/VeraCrypt/
+  - brew tap macos-fuse-t/homebrew-cask
+  - brew install fuse-t
+  - brew install fuse-t-sshfs
+Zathura
+  - brew tap zegervdv/zathura
+  - brew install zathura --with-synctex
+  - brew install zathura-pdf-poppler
 
 https://github.com/vimichael/my-nvim-config/blob/main/init.lua
 https://github.com/omerxx/dotfiles
@@ -29,3 +38,7 @@ npm config set prefix ~/.npm-global
 export PATH="$HOME/.npm-global/bin:$PATH"
 npm install -g typescript typescript-language-server
 
+
+
+## QMK
+qmk compile -kb boardsource/unicorne -km steven-egan 

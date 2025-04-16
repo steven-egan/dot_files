@@ -38,6 +38,7 @@ return {
           "prismals",
           "pyright",
           "golangci_lint_ls",
+          "buf_ls",
         },
       })
   
