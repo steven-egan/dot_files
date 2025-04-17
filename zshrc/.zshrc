@@ -7,7 +7,6 @@ export GO_PRIVATE=github.com/steven-egan/*
 
 alias python=python3
 alias tm=tmux
-alias tma=
 alias tma='f() { tmux attach-session -t $1 };f'
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
