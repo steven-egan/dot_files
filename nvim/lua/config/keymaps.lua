@@ -26,3 +26,6 @@ keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer
 -- Insert scroll
 keymap.set("i", "<C-E>", "<C-X><C-E>")
 keymap.set("i", "<C-Y>", "<C-X><C-Y>")
+
+-- MD peek
+keymap.set("n", "<leader>mp", ":PeekOpen<CR>", { desc = "Preview Markdown" })
