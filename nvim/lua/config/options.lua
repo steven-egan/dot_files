@@ -14,6 +14,7 @@ opt.autoindent = true -- copy indent from current line when starting new one
 opt.wrap = true
 opt.linebreak = true
 opt.breakindent = true
+opt.scrolloff = 5
 
 -- search settings
 opt.ignorecase = true -- ignore case when searching

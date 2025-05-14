@@ -22,6 +22,10 @@ NVIM Peek (preview markdown files):
 
 - brew install deno
 
+# View markdown files
+
+- brew install glow
+
 https://github.com/vimichael/my-nvim-config/blob/main/init.lua
 https://github.com/Dan7h3x/SciVim/tree/stable/lua/SciVim/plugins
 
@@ -43,7 +47,8 @@ npm config set prefix ~/.npm-global
 export PATH="$HOME/.npm-global/bin:$PATH"
 npm install -g typescript typescript-language-server
 
-## Dependency on 
+## Dependency on
+
 - `brew install fzf`
 
 ## QMK
