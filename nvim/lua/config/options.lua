@@ -1,4 +1,9 @@
 vim.cmd("let g:netrw_liststyle = 3")
+-- Create undo directory if it doesn't exist
+local undodir = vim.fn.stdpath("data") .. "/undodir"
+if vim.fn.isdirectory(undodir) == 0 then
+    vim.fn.mkdir(undodir, "p")
+end
 
 local opt = vim.opt
 
@@ -24,8 +29,8 @@ opt.cursorline = true
 
 -- turn on termguicolors for tokyonight colorscheme to work
 -- (have to use iterm2 or any other true color terminal)
-opt.termguicolors = true
-opt.background = "dark" -- colorschemes that can be light or dark will be made dark
+-- opt.termguicolors = true
+-- opt.background = "dark" -- colorschemes that can be light or dark will be made dark
 opt.signcolumn = "yes" -- show sign column so that text doesn't shift
 
 -- backspace
@@ -40,4 +45,7 @@ opt.splitbelow = true -- split horizontal window to the bottom
 
 -- turn off swapfile
 opt.swapfile = false
-opt.undofile = true -- enable persistent undo
+
+-- Enable persistent undo (modern style)
+vim.opt.undofile = true
+vim.opt.undodir = undodir
