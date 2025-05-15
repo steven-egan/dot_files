@@ -18,11 +18,11 @@ https://www.veracrypt.fr/code/VeraCrypt/
 - brew install fuse-t
 - brew install fuse-t-sshfs
 
-NVIM Peek (preview markdown files):
+NVIM `Peek` (preview markdown files):
 
 - brew install deno
 
-# View markdown files
+# View markdown files in terminal
 
 - brew install glow
 
