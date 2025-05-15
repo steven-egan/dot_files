@@ -29,3 +29,6 @@ keymap.set("i", "<C-Y>", "<C-X><C-Y>")
 
 -- MD peek
 keymap.set("n", "<leader>mp", ":PeekOpen<CR>", { desc = "Preview Markdown" })
+
+-- Shortcuts
+keymap.set("n", "ycc", "yygccp", { desc = "Duplicate line and comment out the top one", remap = true })
