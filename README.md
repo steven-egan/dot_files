@@ -36,8 +36,6 @@ https://github.com/brunobmello25/dotfiles
 https://github.com/vim-test/vim-test
 https://github.com/nxtkofi/LightningNvim?tab=readme-ov-file#dashboard-images
 https://github.com/omerxx/dotfiles
-Tmux session manager
-Tmux prefix hotkey
 
 ## Getting LSP working
 
@@ -46,10 +44,6 @@ mkdir -p ~/.npm-global
 npm config set prefix ~/.npm-global
 export PATH="$HOME/.npm-global/bin:$PATH"
 npm install -g typescript typescript-language-server
-
-## Dependency on
-
-- `brew install fzf`
 
 ## QMK
 

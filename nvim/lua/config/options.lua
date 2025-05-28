@@ -41,3 +41,6 @@ opt.splitbelow = true -- split horizontal window to the bottom
 -- turn off swapfile
 opt.swapfile = false
 opt.undofile = true -- enable persistent undo
+
+opt.spelllang = "en_us" -- set spell checking language to English (US)
+opt.spell = true -- enable spell checking
