@@ -3,6 +3,7 @@
 echo "'stow'ing dotfiles..."
 cp ./local/bin/tmux-sessionizer ~/.local/bin/tmux-sessionizer
 stow .
+ln -s ~/Desktop/repos/dot_files/hammerspoon ~/.hammerspoon
 ## Some tools expect the config in ~/.config/zsh
 ln -s ~/.config/zsh/.zshrc ~/.zshrc
 

@@ -7,6 +7,7 @@ export GO_PRIVATE=github.com/steven-egan/*
 
 alias python=python3
 alias tm=tmux
+alias pr='gh pr create --web'
 alias tma='f() { tmux attach-session -t $1 };f'
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
@@ -32,3 +33,4 @@ source $ZSH/oh-my-zsh.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
